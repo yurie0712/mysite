@@ -1,0 +1,22 @@
+.main {
+  background: #fcc;
+  margin-bottom: 10px;
+}
+.side {
+  background: #fea;
+}
+.main,
+.side {
+  padding: 2%;
+  border-radius: 10px
+}
+
+@media ( min-width : 600px ){
+	.flexbox {
+    display: -webkit-flex;
+    display: flex;
+	}
+  .main {
+    margin: 0 10px 0 0;
+  }
+}
