@@ -1,22 +1,68 @@
-.main {
-  background: #fcc;
-  margin-bottom: 10px;
-}
-.side {
-  background: #fea;
-}
-.main,
-.side {
-  padding: 2%;
-  border-radius: 10px
+* {
+  margin: 0;
+  padding: 0;
 }
 
-@media ( min-width : 600px ){
-	.flexbox {
-    display: -webkit-flex;
-    display: flex;
-	}
-  .main {
-    margin: 0 10px 0 0;
-  }
+html {
+  height: 100%;
+  color: #1f1f1f;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  transition: color 0.5s;
+}
+
+a:hover{
+  color : #dfdfdf;
+}
+
+body {
+  height: 100%;
+  font-family:
+    'M+ C Type-1 (basic latin) Light',
+    'M+ Type-1 (general-j) Light', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+}
+
+.left-column, .right-column {
+  padding: 20px;
+}
+
+/* 左カラム  */
+
+.left-column {
+  width: 15%;
+  margin-right: 220px;
+  position: relative;
+  /* background-color: antiquewhite; */
+}
+
+.left-column ul {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* 右カラム */
+
+.right-column {
+  width: 85%;
+  /* background-color: burlywood; */
 }
