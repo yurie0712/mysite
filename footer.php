@@ -1,5 +1,6 @@
       <footer>
-        フッター部分
+        <br>
+        <br>©︎mou
       </footer>
     <?php wp_footer(); ?>
   </body>
