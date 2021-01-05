@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+	width: 1100px;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  font-family: "a-otf-futo-go-b101-pr6n", "museo-sans", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  line-height: 2.4;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #363A45;
+}
