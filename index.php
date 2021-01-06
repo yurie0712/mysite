@@ -3,7 +3,7 @@
     <br>
     <br>
     <div class="article-lists">
-      <b>記事一覧</b>
+      <h1>記事一覧</h1>
       <?php 
       if ( have_posts() ) :
           while ( have_posts() ) : the_post();
@@ -14,6 +14,9 @@
           endwhile;
       endif;
       ?>
+
+      <?php previous_posts_link('新しい投稿ページへ'); ?>
+      <?php next_posts_link('古い投稿ページへ'); ?>
     </div>
   </div>
 <?php get_footer(); ?>
