@@ -19,4 +19,17 @@
       <?php next_posts_link('古い投稿ページへ'); ?>
     </div>
   </div>
+  <div class="archives-lists">
+    <br><h2>月別</h2>
+    <?php wp_get_archives(); ?>
+  </div>
+  <div class="category-lists">
+    <br><h2>カテゴリー別</h2>
+    <?php
+$categories = get_categories();
+foreach($categories as $category) {
+echo '<li><a href="'.get_category_link($category->term_id).'">'.$category->name.'</a></li>';
+}
+?>
+  </div>
 <?php get_footer(); ?>

@@ -92,10 +92,14 @@ a:hover {
 	font-weight: 800;
 }
 
-.article-lists h1 {
+.article-container h1 {
+	font-weight: bold;	
+}
+
+.archives-lists h2 {
 	font-weight: bold;
 }
 
-.article-container h1 {
-	font-weight: bold;	
+.category-lists h2 {
+	font-weight: bold;
 }
