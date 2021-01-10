@@ -1,16 +1,20 @@
 <?php get_header(); ?>
+
+<div id="top-image"></div>
+
+<div class="top-container">
   <div class="article-container">
     <br>
     <br>
     <div class="article-lists">
       <h1>記事一覧</h1>
-      <?php 
+      <?php
       if ( have_posts() ) :
           while ( have_posts() ) : the_post();
       ?>
         <br><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
         作成日時：<?php the_time('Y年n月j日'); ?>
-      <?php 
+      <?php
           endwhile;
       endif;
       ?>
@@ -32,4 +36,6 @@
       }
     ?>
   </div>
+</div>
+
 <?php get_footer(); ?>
