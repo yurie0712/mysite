@@ -69,14 +69,15 @@ table {
 
 header .inner {
 	height: 90px;
+	width: 1100px;
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	align-items: center;
 	position: relative;
 }
 
 body {
-	max-width: 1100px;
+	/* max-width: 1100px; */
 	margin: 0 auto;
 	width: 100%;
   background-color: #EFEFEF;
@@ -191,7 +192,7 @@ border-radius:10px 0 0 10px; */
 .menu-btn {
 	position: absolute;
 	box-sizing: border-box;
-	right: 0;
+	right: 0px;
 	top: 32px;/*ボタンの場所。右上にしたければtop: 10px*/
 	width: 25px;
 	height: 36px;
@@ -295,7 +296,7 @@ border-bottom: 1px dotted #CCC;/*各メニューリストの下線*/
 
 .drawer-menu li a {
 	display: block;
-height: 50px;/*各メニューリストの縦幅*/
+	height: 50px;/*各メニューリストの縦幅*/
 	line-height: 50px;/*各メニューリストの縦幅*/
 	font-size: 15px;
 	-webkit-transition: all .8s;
@@ -304,6 +305,7 @@ height: 50px;/*各メニューリストの縦幅*/
 /*メニューボタンここまで*/
 
 
+/* トップ画像（Javascript表示） */
 #top-image {
 	position: relative;
 	width: 100%;
@@ -312,4 +314,36 @@ height: 50px;/*各メニューリストの縦幅*/
 	background-repeat: no-repeat;
 	background-size: 150%;
 	background-position: center top;
+	margin-bottom: 80px;
+}
+
+/* main layout */
+main {
+	background-color:	#555D55;
+}
+
+/* 最新記事一覧 */
+
+.contents-list{
+	padding: 15px 30px;
+	background-color: #fff;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+.contents-list  h1{
+	font-weight: bold;
+}
+
+.single-article {
+	height: 1000px;
+}
+
+.single-content {
+	padding-top: 80px;
+}
+
+footer p {
+	text-align: center;
 }
