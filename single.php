@@ -17,7 +17,11 @@
 
           <?php previous_post_link('%link','古い記事へ'); ?>
           <?php next_post_link('%link','新しい記事へ'); ?>
-          </article>
+
+          <br>
+          <br><h3><?php echo get_comments_number().' 件のコメント'; ?></h3>
+          <br><?php comments_template(); ?>
+        </article>
       </div>
       <div class="col-md-4">
         <div class="top-container">

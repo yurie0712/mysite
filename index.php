@@ -21,6 +21,7 @@
           <!-- 記事内容 -->
           <?php the_content(); ?>
           <?php the_time('投稿日時： Y年n月j日 H:i'); ?><br/>
+          <p><h3>コメント数：<?php echo get_comments_number(); ?></p>
         </article>
         <!-- ループ内処理　ここまで -->
         <?php endwhile;?>

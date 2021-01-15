@@ -1,5 +1,5 @@
 <?php
- 
+
 function sample_scripts(){
   wp_enqueue_style('style', get_stylesheet_uri() );
 }
@@ -15,6 +15,15 @@ function custom_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
+
+// 「jQuery Migrate」を読み込まないようにする
+add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+function dequeue_jquery_migrate( $scripts){
+    if(!is_admin()){
+        $scripts->remove( 'jquery');
+        $scripts->add( 'jquery', false, array( 'jquery-core' ) );
+    }
+}
 
 // function themebs_enqueue_styles() {
 //     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
