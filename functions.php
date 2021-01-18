@@ -25,6 +25,15 @@ function dequeue_jquery_migrate( $scripts){
     }
 }
 
+//サイドバーを1つ設置する
+register_sidebar(array(
+			'name'=>'サイドバー',
+			'before_widget'=>'<div class="sidebar-wrapper">',
+			'after_widget'=>'</div>',
+			'before_title' => '<h4 class="sidebar-title">',
+			'after_title' => '</h4>'
+));
+
 // function themebs_enqueue_styles() {
 //     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
 //     wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css' );

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main>
-  <div id="index-image"></div>
+  <div id="top-image"></div>
 
   <div class="container">
     <div class="row">
